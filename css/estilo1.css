@@ -11,6 +11,7 @@ body {
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina relleno predeterminado */
   position: relative; /* Para posicionar el video de fondo */
+   background-color: black;
 }
 
 /* Estilos del video de fondo */
