@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Gamer</title>
+  <link rel="stylesheet" href="../estilos/estilo1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+</head>
+<body>
+  <video autoplay muted loop id="background-video">
+    <source src="../imagenes/fondo.mp4" type="video/mp4"> <!-- Reemplaza con la ruta de tu video -->
+    Tu navegador no soporta el video.
+  </video>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" data-aos="fade-up">
+      <h2>Sobre mí</h2>
+      <p>Breve descripción sobre ti y tu experiencia como desarrollador web.</p>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <h2>Habilidades</h2>
+      <div class="skills-content">
+        <div class="skill">
+          <h3>HTML5</h3>
+          <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+        </div>
+        <div class="skill">
+          <h3>CSS3</h3>
+          <div class="progress-bar"><div class="progress" style="width: 25%;"></div></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress-bar"><div class="progress" style="width: 20%;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Proyectos</h2>
+      <div class="project" data-project="project1">
+        <img src="../imagenes/1ersitio web.png" alt="Proyecto 1">
+        <h3>Mi primer proyecto</h3>
+        <p>Este es mi primer proyecto que fue posible gracias a la academia STEAM venezuela ya que ellos me ayudaron y enseñaron a programar y decorar sitios web.</p>
+        <a href="http://localhost/holamundo/hola.html" class="btn">Ver más</a>
+      </div>
+      <div class="project" data-project="project2">
+        <img src="../imagenes/espaciositioweb.png" alt="Proyecto 2">
+        <h3>Proyecto sobre el espacio</h3>
+        <p>Este sitio lo cree con el proposito de dar un conocimiento basico del espacio a los que no son tan aficionados ya que este sitio es simple y directo.</p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+    </section>
+
+    <section id="testimonials" data-aos="fade-up">
+      <h2>Testimonios</h2>
+      <div class="testimonial">
+        <p>"Un desarrollador excepcional, siempre entrega a tiempo y con calidad."</p>
+        <cite>- Cliente Satisfecho</cite>
+      </div>
+      <div class="testimonial">
+        <p>"Gran habilidad para resolver problemas y crear soluciones efectivas."</p>
+        <cite>- Compañero de estudio</cite>
+      </div>
+    </section>
+
+    <section id="blog" data-aos="fade-up">
+      <h2>Blog</h2>
+      <article>
+        <h3>Desarrollo Web</h3>
+        <p>El desarrollo web es el proceso de crear y mantener sitios web. Este campo abarca desde el diseño de la interfaz de usuario (frontend) hasta la gestión de bases de datos y servidores (backend).
+
+          Principales Etapas del Desarrollo Web
+          Planificación: Definir los objetivos del sitio y su estructura.
+          Diseño: Crear el diseño visual y la experiencia del usuario.
+          Desarrollo: Programar el sitio utilizando lenguajes como HTML, CSS, JavaScript para el frontend y PHP, Python, Ruby para el backend.
+          Pruebas: Asegurarse de que el sitio funcione correctamente en diferentes dispositivos y navegadores.
+          Lanzamiento: Publicar el sitio en un servidor web.
+          Mantenimiento: Actualizar y mejorar el sitio continuamente.
+          Lenguajes de Programación Comunes
+          Frontend: HTML, CSS, JavaScript
+          Backend: PHP, Python, Ruby, Node.js.</p>
+      </article>
+      <article>
+        <h3>Tecnologías emergentes</h3>
+        <p>Las tecnologías emergentes son innovaciones que están en las primeras etapas de desarrollo y tienen el potencial de transformar industrias y la sociedad en general. Aquí te dejo algunas de las tecnologías emergentes más destacadas de 2024:
+
+          Inteligencia Artificial (IA) Generativa: La IA está revolucionando la investigación científica, especialmente en áreas como la salud y la sostenibilidad1.
+          Combustible de Aviación Sostenible (SAF): Este tipo de combustible, hecho a partir de fuentes biológicas o CO2, está ayudando a reducir las emisiones de carbono en la industria de la aviación2.
+          Superficies Inteligentes Reconfigurables (RIS): Estas superficies optimizan las comunicaciones inalámbricas y mejoran la conectividad de manera sostenible1.
+          Microbios que Capturan Carbono: Utilizados para combatir el cambio climático, estos microbios pueden capturar y almacenar carbono de manera eficiente1.
+          Tecnología Elastocalórica: Una nueva forma de refrigeración que utiliza materiales elastocalóricos para ser más eficiente y ecológica1.
+          Estas tecnologías están diseñadas para abordar algunos de los desafíos más grandes del mundo, desde el cambio climático hasta la mejora de la conectividad y la salud.</p>
+      </article>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="form-message"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Portafolio Gamer. Todos los derechos reservados.</p>
+    <div class="social-share">
+      <a href="#" class="social-btn">Compartir en Facebook</a>
+      <a href="#" class="social-btn">Compartir en Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="../js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
