@@ -11,18 +11,7 @@ body {
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina relleno predeterminado */
   position: relative; /* Para posicionar el video de fondo */
-   background-color: black;
-}
-
-/* Estilos del video de fondo */
-#background-video {
-  position: fixed; /* Fijo */
-  top: 0;
-  left: 0;
-  width: 100%; /* Ancho completo */
-  height: 100%; /* Alto completo */
-  object-fit: cover; /* Cubre todo el fondo */
-  z-index: -1; /* Detrás del contenido */
+  background-color: #000000;
 }
 
 /* Estilos de las barras laterales */
