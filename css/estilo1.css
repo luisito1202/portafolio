@@ -7,7 +7,7 @@
 /* Estilos generales */
 body {
   font-family: 'Press Start 2P', cursive;
-  color: #fff; /* Texto blanco */
+  color: #000000; /* Texto blanco */
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina relleno predeterminado */
   position: relative; /* Para posicionar el video de fondo */
