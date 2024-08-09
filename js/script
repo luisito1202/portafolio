@@ -1,0 +1,50 @@
+const projects = {
+    project1: {
+        title: "Mi primer proyecto",
+        description: "Este es un proyecto que hice para aprender sobre desarrollo web. Incluye HTML, CSS y JavaScript."
+    },
+    project2: {
+        title: "Proyecto sobre el espacio",
+        description: "Un proyecto que explora el sistema solar y sus planetas, utilizando gráficos y datos interactivos."
+    }
+};
+
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalDescription = document.getElementById("modal-description");
+const closeModal = document.getElementsByClassName("close")[0];
+
+// Función para abrir el modal
+function openModal(project) {
+    modal.style.display = "block";
+    modalTitle.innerText = projects[project].title;
+    modalDescription.innerText = projects[project].description;
+}
+
+// Función para cerrar el modal
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Cierra el modal si se hace clic fuera de él
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Agregar eventos de clic a los botones "Ver más"
+document.querySelectorAll('.project .btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita que el enlace recargue la página
+        const project = event.target.closest('.project').getAttribute('data-project');
+        openModal(project);
+    });
+});
+
+// Manejo del envío del formulario
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario
+    document.getElementById('form-message').innerText = "¡Gracias por tu mensaje!";
+    this.reset(); // Resetea el formulario
+});
